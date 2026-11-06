@@ -1,8 +1,8 @@
-﻿import { Column, Entity, PrimaryColumn } from "typeorm";
+﻿import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({ name: "venda", schema: "public" })
 export class Venda {
-  @PrimaryColumn({ type: "integer", primaryKeyConstraintName: "venda_pk" })
+  @PrimaryGeneratedColumn("identity", { type: "integer", primaryKeyConstraintName: "venda_pk" })
   id: number;
 
   @Column({ type: "integer", nullable: true })
