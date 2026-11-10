@@ -33,4 +33,4 @@ app.use("/gastos", gastoRoutes)
 app.use("/resumo", resumoRoutes)
 
 
-app.use(handleErrors) 
+app.use(handleErrors)  
